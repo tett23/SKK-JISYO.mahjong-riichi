@@ -1,0 +1,43 @@
+{
+  "tasks": {
+    "fetch": "deno run --allow-read --allow-write --allow-net=raw.githubusercontent.com scripts/fetch_sources.ts",
+    "build": {
+      "command": "deno run --allow-read --allow-write scripts/build.ts",
+      "dependencies": [
+        "fetch"
+      ]
+    },
+    "test": "deno test --allow-read tests/",
+    "zip": {
+      "command": "deno run --allow-read --allow-write --allow-run=zip scripts/package.ts",
+      "dependencies": [
+        "build"
+      ]
+    },
+    "index": "deno run --allow-read --allow-write --allow-net=ja.wikipedia.org scripts/wp_index.ts",
+    "corpus": "deno run --allow-read --allow-write --allow-net=ja.wikipedia.org scripts/corpus.ts",
+    "notes": "deno run --allow-read scripts/release_notes.ts"
+  },
+  "fmt": {
+    "lineWidth": 120,
+    "include": [
+      "scripts/",
+      "tests/",
+      "deno.json"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-control-regex"
+      ]
+    },
+    "include": [
+      "scripts/",
+      "tests/"
+    ]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

@@ -1,0 +1,155 @@
+# 自動照合（skk-dev/dict, Wikipedia 索引, Mozc）で裏付けが取れない語に付ける出典。
+# id は data/*.tsv の refs 列から参照する。revid は参照した版。
+id	title	url	revid	license
+# revid 列は Wikipedia では版、それ以外は参照日。license 列はその出典の扱い。
+wp-sanma	Wikipedia「三人麻雀」	https://ja.wikipedia.org/w/index.php?oldid=107845265	107845265	CC BY-SA 4.0
+wp-chugoku	Wikipedia「中国麻雀」	https://ja.wikipedia.org/w/index.php?oldid=110887295	110887295	CC BY-SA 4.0
+wp-taiwan	Wikipedia「台湾麻雀」	https://ja.wikipedia.org/w/index.php?oldid=110945428	110945428	CC BY-SA 4.0
+wp-dora	Wikipedia「ドラ (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=106952963	106952963	CC BY-SA 4.0
+wp-tanyao	Wikipedia「断么九」（節「クイタンのありなし」）	https://ja.wikipedia.org/w/index.php?oldid=107497603	107497603	CC BY-SA 4.0
+wp-janta	Wikipedia「雀魂」	https://ja.wikipedia.org/w/index.php?oldid=111230542	111230542	CC BY-SA 4.0
+wp-mleague	Wikipedia「Mリーグ」	https://ja.wikipedia.org/w/index.php?oldid=111224897	111224897	CC BY-SA 4.0
+wp-mfc	Wikipedia「麻雀格闘倶楽部」	https://ja.wikipedia.org/w/index.php?oldid=110912298	110912298	CC BY-SA 4.0
+wp-arshiar	Wikipedia「アルシーアル麻雀」	https://ja.wikipedia.org/w/index.php?oldid=110942477	110942477	CC BY-SA 4.0
+wp-pai	Wikipedia「麻雀牌」	https://ja.wikipedia.org/w/index.php?oldid=109898379	109898379	CC BY-SA 4.0
+wp-kan	Wikipedia「槓」	https://ja.wikipedia.org/w/index.php?oldid=108446404	108446404	CC BY-SA 4.0
+wp-tenpai	Wikipedia「聴牌」	https://ja.wikipedia.org/w/index.php?oldid=110016972	110016972	CC BY-SA 4.0
+wp-rule	Wikipedia「麻雀のルール」	https://ja.wikipedia.org/w/index.php?oldid=110497493	110497493	CC BY-SA 4.0
+wp-agari	Wikipedia「和了」	https://ja.wikipedia.org/w/index.php?oldid=110452017	110452017	CC BY-SA 4.0
+mjall-0001	麻雀のすべて「麻雀用語辞典」1	https://mjall.jp/dic0001/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0016	麻雀のすべて「麻雀用語辞典」16	https://mjall.jp/dic0016/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0018	麻雀のすべて「麻雀用語辞典」18	https://mjall.jp/dic0018/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0020	麻雀のすべて「麻雀用語辞典」20	https://mjall.jp/dic0020/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0022	麻雀のすべて「麻雀用語辞典」22	https://mjall.jp/dic0022/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0024	麻雀のすべて「麻雀用語辞典」24	https://mjall.jp/dic0024/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0026	麻雀のすべて「麻雀用語辞典」26	https://mjall.jp/dic0026/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0029	麻雀のすべて「麻雀用語辞典」29	https://mjall.jp/dic0029/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0032	麻雀のすべて「麻雀用語辞典」32	https://mjall.jp/dic0032/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0033	麻雀のすべて「麻雀用語辞典」33	https://mjall.jp/dic0033/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0035	麻雀のすべて「麻雀用語辞典」35	https://mjall.jp/dic0035/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0039	麻雀のすべて「麻雀用語辞典」39	https://mjall.jp/dic0039/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0041	麻雀のすべて「麻雀用語辞典」41	https://mjall.jp/dic0041/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0044	麻雀のすべて「麻雀用語辞典」44	https://mjall.jp/dic0044/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0047	麻雀のすべて「麻雀用語辞典」47	https://mjall.jp/dic0047/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0050	麻雀のすべて「麻雀用語辞典」50	https://mjall.jp/dic0050/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0051	麻雀のすべて「麻雀用語辞典」51	https://mjall.jp/dic0051/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0053	麻雀のすべて「麻雀用語辞典」53	https://mjall.jp/dic0053/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0060	麻雀のすべて「麻雀用語辞典」60	https://mjall.jp/dic0060/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0061	麻雀のすべて「麻雀用語辞典」61	https://mjall.jp/dic0061/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0063	麻雀のすべて「麻雀用語辞典」63	https://mjall.jp/dic0063/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0065	麻雀のすべて「麻雀用語辞典」65	https://mjall.jp/dic0065/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0069	麻雀のすべて「麻雀用語辞典」69	https://mjall.jp/dic0069/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0070	麻雀のすべて「麻雀用語辞典」70	https://mjall.jp/dic0070/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0071	麻雀のすべて「麻雀用語辞典」71	https://mjall.jp/dic0071/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0073	麻雀のすべて「麻雀用語辞典」73	https://mjall.jp/dic0073/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0074	麻雀のすべて「麻雀用語辞典」74	https://mjall.jp/dic0074/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0077	麻雀のすべて「麻雀用語辞典」77	https://mjall.jp/dic0077/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0080	麻雀のすべて「麻雀用語辞典」80	https://mjall.jp/dic0080/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0081	麻雀のすべて「麻雀用語辞典」81	https://mjall.jp/dic0081/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0082	麻雀のすべて「麻雀用語辞典」82	https://mjall.jp/dic0082/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0083	麻雀のすべて「麻雀用語辞典」83	https://mjall.jp/dic0083/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0084	麻雀のすべて「麻雀用語辞典」84	https://mjall.jp/dic0084/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0090	麻雀のすべて「麻雀用語辞典」90	https://mjall.jp/dic0090/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0094	麻雀のすべて「麻雀用語辞典」94	https://mjall.jp/dic0094/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0096	麻雀のすべて「麻雀用語辞典」96	https://mjall.jp/dic0096/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0100	麻雀のすべて「麻雀用語辞典」100	https://mjall.jp/dic0100/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0101	麻雀のすべて「麻雀用語辞典」101	https://mjall.jp/dic0101/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0102	麻雀のすべて「麻雀用語辞典」102	https://mjall.jp/dic0102/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0103	麻雀のすべて「麻雀用語辞典」103	https://mjall.jp/dic0103/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0105	麻雀のすべて「麻雀用語辞典」105	https://mjall.jp/dic0105/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0109	麻雀のすべて「麻雀用語辞典」109	https://mjall.jp/dic0109/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0110	麻雀のすべて「麻雀用語辞典」110	https://mjall.jp/dic0110/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0111	麻雀のすべて「麻雀用語辞典」111	https://mjall.jp/dic0111/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0112	麻雀のすべて「麻雀用語辞典」112	https://mjall.jp/dic0112/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0116	麻雀のすべて「麻雀用語辞典」116	https://mjall.jp/dic0116/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0117	麻雀のすべて「麻雀用語辞典」117	https://mjall.jp/dic0117/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0119	麻雀のすべて「麻雀用語辞典」119	https://mjall.jp/dic0119/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0120	麻雀のすべて「麻雀用語辞典」120	https://mjall.jp/dic0120/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0124	麻雀のすべて「麻雀用語辞典」124	https://mjall.jp/dic0124/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0128	麻雀のすべて「麻雀用語辞典」128	https://mjall.jp/dic0128/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0129	麻雀のすべて「麻雀用語辞典」129	https://mjall.jp/dic0129/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0132	麻雀のすべて「麻雀用語辞典」132	https://mjall.jp/dic0132/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0134	麻雀のすべて「麻雀用語辞典」134	https://mjall.jp/dic0134/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0135	麻雀のすべて「麻雀用語辞典」135	https://mjall.jp/dic0135/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0137	麻雀のすべて「麻雀用語辞典」137	https://mjall.jp/dic0137/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0138	麻雀のすべて「麻雀用語辞典」138	https://mjall.jp/dic0138/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0140	麻雀のすべて「麻雀用語辞典」140	https://mjall.jp/dic0140/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0141	麻雀のすべて「麻雀用語辞典」141	https://mjall.jp/dic0141/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0151	麻雀のすべて「麻雀用語辞典」151	https://mjall.jp/dic0151/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0153	麻雀のすべて「麻雀用語辞典」153	https://mjall.jp/dic0153/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0154	麻雀のすべて「麻雀用語辞典」154	https://mjall.jp/dic0154/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0155	麻雀のすべて「麻雀用語辞典」155	https://mjall.jp/dic0155/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0159	麻雀のすべて「麻雀用語辞典」159	https://mjall.jp/dic0159/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0161	麻雀のすべて「麻雀用語辞典」161	https://mjall.jp/dic0161/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0162	麻雀のすべて「麻雀用語辞典」162	https://mjall.jp/dic0162/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0164	麻雀のすべて「麻雀用語辞典」164	https://mjall.jp/dic0164/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0169	麻雀のすべて「麻雀用語辞典」169	https://mjall.jp/dic0169/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0170	麻雀のすべて「麻雀用語辞典」170	https://mjall.jp/dic0170/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0171	麻雀のすべて「麻雀用語辞典」171	https://mjall.jp/dic0171/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0173	麻雀のすべて「麻雀用語辞典」173	https://mjall.jp/dic0173/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0177	麻雀のすべて「麻雀用語辞典」177	https://mjall.jp/dic0177/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0178	麻雀のすべて「麻雀用語辞典」178	https://mjall.jp/dic0178/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0179	麻雀のすべて「麻雀用語辞典」179	https://mjall.jp/dic0179/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0181	麻雀のすべて「麻雀用語辞典」181	https://mjall.jp/dic0181/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0182	麻雀のすべて「麻雀用語辞典」182	https://mjall.jp/dic0182/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0185	麻雀のすべて「麻雀用語辞典」185	https://mjall.jp/dic0185/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0186	麻雀のすべて「麻雀用語辞典」186	https://mjall.jp/dic0186/	2026-10-06 参照	リンクのみ（本文は利用していない）
+mjall-0188	麻雀のすべて「麻雀用語辞典」188	https://mjall.jp/dic0188/	2026-10-06 参照	リンクのみ（本文は利用していない）
+wp-glossary	Wikipedia「麻雀用語一覧」	https://ja.wikipedia.org/w/index.php?oldid=108958820	108958820	CC BY-SA 4.0
+wp-yakulist	Wikipedia「麻雀の役一覧」	https://ja.wikipedia.org/w/index.php?oldid=109102932	109102932	CC BY-SA 4.0
+wp-ishanten	Wikipedia「一向聴」	https://ja.wikipedia.org/w/index.php?oldid=109333891	109333891	CC BY-SA 4.0
+wp-riichi	Wikipedia「立直」	https://ja.wikipedia.org/w/index.php?oldid=110123474	110123474	CC BY-SA 4.0
+wp-furo	Wikipedia「副露」	https://ja.wikipedia.org/w/index.php?oldid=111233068	111233068	CC BY-SA 4.0
+wp-senjutsu	Wikipedia「麻雀の戦術」	https://ja.wikipedia.org/w/index.php?oldid=109528156	109528156	CC BY-SA 4.0
+wp-hako	Wikipedia「箱 (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=108807454	108807454	CC BY-SA 4.0
+wp-uma	Wikipedia「ウマ (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=103114782	103114782	CC BY-SA 4.0
+wp-suji	Wikipedia「筋 (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=105093470	105093470	CC BY-SA 4.0
+wp-yakuhai	Wikipedia「役牌」	https://ja.wikipedia.org/w/index.php?oldid=99683852	99683852	CC BY-SA 4.0
+tenhou-man	天鳳 マニュアル（成績項目）	https://tenhou.net/man/	2026-10-06 参照	リンクのみ
+mleague-stats	Mリーグ公式 成績	https://m-league.jp/stats/	2026-10-06 参照	リンクのみ
+mleague-rentai	麻雀ウォッチ「個人連対率」データから見るMリーグ #14	https://mj-news.net/news/mleague/m-column/20210325156943	2026-10-06 参照	リンクのみ
+abema-doraon	ABEMA TIMES（Mリーグ記事。見出しに「ドラポン」）	https://times.abema.tv/articles/-/10241621	2026-10-06 参照	リンクのみ
+jmdict-chuchan	JMdict（jisho.org）「中張牌」	https://jisho.org/search/%E4%B8%AD%E5%BC%B5%E7%89%8C	2026-10-06 参照	CC BY-SA 4.0（読みの確認のみ）
+jmdict-yaochu	JMdict（jisho.org）「么九牌」	https://jisho.org/search/%E4%B9%88%E4%B9%9D%E7%89%8C	2026-10-06 参照	CC BY-SA 4.0（読みの確認のみ）
+kotobank-mahjong	コトバンク「麻雀」（日本大百科全書）	https://kotobank.jp/word/%E9%BA%BB%E9%9B%80-136163	2026-10-06 参照	リンクのみ
+majandofu-chanfon	麻雀豆腐「荘風牌」	https://majandofu.com/mahjong-glossary-chanfonpai2	2026-10-06 参照	リンクのみ
+majandofu-dabnan	麻雀豆腐「ダブ南」	https://majandofu.com/mahjong-glossary-dabnan	2026-10-06 参照	リンクのみ
+wp-hourouki	Wikipedia「麻雀放浪記」	https://ja.wikipedia.org/w/index.php?oldid=109587290	109587290	CC BY-SA 4.0
+wp-mukoubuchi	Wikipedia「むこうぶち」	https://ja.wikipedia.org/w/index.php?oldid=110863642	110863642	CC BY-SA 4.0
+wp-usagi	Wikipedia「兎-野性の闘牌-」	https://ja.wikipedia.org/w/index.php?oldid=110708277	110708277	CC BY-SA 4.0
+wp-tetsuya	Wikipedia「哲也-雀聖と呼ばれた男」	https://ja.wikipedia.org/w/index.php?oldid=110963623	110963623	CC BY-SA 4.0
+wp-renmei	Wikipedia「日本プロ麻雀連盟」	https://ja.wikipedia.org/w/index.php?oldid=111259714	111259714	CC BY-SA 4.0
+wp-ten	Wikipedia「天 天和通りの快男児」	https://ja.wikipedia.org/w/index.php?oldid=110178632	110178632	CC BY-SA 4.0
+wp-mu	Wikipedia「麻将連合」	https://ja.wikipedia.org/w/index.php?oldid=110405681	110405681	CC BY-SA 4.0
+wp-saikouisen-kyokai	Wikipedia「最高位戦日本プロ麻雀協会」	https://ja.wikipedia.org/w/index.php?oldid=110920445	110920445	CC BY-SA 4.0
+wp-saikouisen	Wikipedia「最高位戦」	https://ja.wikipedia.org/w/index.php?oldid=108475778	108475778	CC BY-SA 4.0
+wp-marujan	Wikipedia「Maru-Jan」	https://ja.wikipedia.org/w/index.php?oldid=109343537	109343537	CC BY-SA 4.0
+wp-bakuhaitou	Wikipedia「ノーマーク爆牌党」	https://ja.wikipedia.org/w/index.php?oldid=107866929	107866929	CC BY-SA 4.0
+wp-kinma	Wikipedia「近代麻雀」	https://ja.wikipedia.org/w/index.php?oldid=110668638	110668638	CC BY-SA 4.0
+wp-kishikai	Wikipedia「日本プロ麻雀棋士会」	https://ja.wikipedia.org/w/index.php?oldid=109694731	109694731	CC BY-SA 4.0
+wp-kyokai	Wikipedia「日本プロ麻雀協会」	https://ja.wikipedia.org/w/index.php?oldid=110469811	110469811	CC BY-SA 4.0
+wp-ouisen	Wikipedia「王位戦 (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=108989526	108989526	CC BY-SA 4.0
+wp-houousen	Wikipedia「鳳凰戦」	https://ja.wikipedia.org/w/index.php?oldid=109619423	109619423	CC BY-SA 4.0
+wp-judansen	Wikipedia「十段戦 (麻雀)」	https://ja.wikipedia.org/w/index.php?oldid=111163112	111163112	CC BY-SA 4.0
+wp-saki	Wikipedia「咲-Saki-」	https://ja.wikipedia.org/w/index.php?oldid=111153444	111153444	CC BY-SA 4.0
+wp-mudazumo	Wikipedia「ムダヅモ無き改革」	https://ja.wikipedia.org/w/index.php?oldid=110936879	110936879	CC BY-SA 4.0
+wp-tenhou	Wikipedia「天鳳 (オンラインゲーム)」	https://ja.wikipedia.org/w/index.php?oldid=109693111	109693111	CC BY-SA 4.0
+wp-mondo	Wikipedia「モンド麻雀プロリーグ」	https://ja.wikipedia.org/w/index.php?oldid=109699459	109699459	CC BY-SA 4.0
+wp-rmu	Wikipedia「RMU」	https://ja.wikipedia.org/w/index.php?oldid=109489055	109489055	CC BY-SA 4.0
+wp-akagi	Wikipedia「アカギ 〜闇に降り立った天才〜」	https://ja.wikipedia.org/w/index.php?oldid=111274677	111274677	CC BY-SA 4.0
+wp-touhai	Wikipedia「凍牌」	https://ja.wikipedia.org/w/index.php?oldid=111168212	111168212	CC BY-SA 4.0
+wp-classic	Wikipedia「最高位戦Classic」	https://ja.wikipedia.org/w/index.php?oldid=110654753	110654753	CC BY-SA 4.0
+wp-mj	Wikipedia「セガNET麻雀 MJ」	https://ja.wikipedia.org/w/index.php?oldid=108111181	108111181	CC BY-SA 4.0
+wp-meijinsen	Wikipedia「天鳳名人戦」	https://ja.wikipedia.org/w/index.php?oldid=107795310	107795310	CC BY-SA 4.0
+wp-saikyousen	Wikipedia「麻雀最強戦」	https://ja.wikipedia.org/w/index.php?oldid=110941514	110941514	CC BY-SA 4.0
+wp-kirinji	Wikipedia「鉄鳴きの麒麟児」	https://ja.wikipedia.org/w/index.php?oldid=109613108	109613108	CC BY-SA 4.0
+wp-fightgirl	Wikipedia「麻雀ファイトガール」	https://ja.wikipedia.org/w/index.php?oldid=111255160	111255160	CC BY-SA 4.0
+tenhou-ranking	天鳳 段位表	https://tenhou.net/ranking.html	2026-10-06 参照	リンクのみ
+bi-tenhou	Business Insider Japan（天鳳「特上卓」）	https://www.businessinsider.jp/post-197865	2026-10-06 参照	リンクのみ
+gendai-tenhou	現代ビジネス（天鳳「鳳凰卓」）	https://gendai.media/articles/-/67507	2026-10-06 参照	リンクのみ
+kotobank-tokujou	コトバンク「特上」	https://kotobank.jp/word/%E7%89%B9%E4%B8%8A	2026-10-06 参照	リンクのみ
+kotobank-janshi	コトバンク「雀士」	https://kotobank.jp/word/%E9%9B%80%E5%A3%AB	2026-10-06 参照	リンクのみ
+kotobank-saikoui	コトバンク「最高位」	https://kotobank.jp/word/%E6%9C%80%E9%AB%98%E4%BD%8D	2026-10-06 参照	リンクのみ
+nico-janryumon	ニコニコ大百科「雀龍門」	https://dic.nicovideo.jp/a/%E9%9B%80%E9%BE%8D%E9%96%80	2026-10-06 参照	リンクのみ
+nico-ichibangai	ニコニコ大百科「麻雀一番街」	https://dic.nicovideo.jp/a/%E9%BA%BB%E9%9B%80%E4%B8%80%E7%95%AA%E8%A1%97	2026-10-06 参照	リンクのみ
+mjall-0156	麻雀のすべて「麻雀用語辞典」156	https://mjall.jp/dic0156/	2026-10-06 参照	リンクのみ（本文は利用していない）

@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: sources-${{ hashFiles('sources.lock') }}
+
+      - name: タグと VERSION が一致するか確かめる
+        run: |
+          test "${GITHUB_REF_NAME#v}" = "$(cat VERSION)" || {
+            echo "タグ ${GITHUB_REF_NAME} と VERSION $(cat VERSION) が一致しない" >&2
+            exit 1
+          }
+
+      - run: deno task test
+      - run: deno task zip
+
+      - name: 前回のリリースの辞書を取得する
+        id: prev
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          prev=$(gh release list --exclude-drafts --json tagName,createdAt \
+                   --jq "map(select(.tagName != \"${GITHUB_REF_NAME}\")) | sort_by(.createdAt) | last | .tagName // empty")
+          echo "tag=${prev}" >> "$GITHUB_OUTPUT"
+          if [ -n "$prev" ]; then
+            mkdir -p prev
+            gh release download "$prev" --pattern SKK-JISYO.mahjong-riichi --dir prev
+          fi
+
+      - name: リリースノートを作る
+        run: |
+          if [ -n "${{ steps.prev.outputs.tag }}" ]; then
+            deno run --allow-read scripts/release_notes.ts "$GITHUB_REF_NAME" dist/SKK-JISYO.mahjong-riichi \
+              prev/SKK-JISYO.mahjong-riichi "${{ steps.prev.outputs.tag }}" > notes.md
+          else
+            deno run --allow-read scripts/release_notes.ts "$GITHUB_REF_NAME" dist/SKK-JISYO.mahjong-riichi > notes.md
+          fi
+
+      - name: リリースを作る
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          flags=""
+          case "$GITHUB_REF_NAME" in *-*) flags="--prerelease" ;; esac
+          gh release create "$GITHUB_REF_NAME" $flags --title "$GITHUB_REF_NAME" --notes-file notes.md \
+            "dist/SKK-JISYO.mahjong-riichi-$(cat VERSION).zip" \
+            dist/SKK-JISYO.mahjong-riichi \
+            dist/SKK-JISYO.mahjong-riichi.L-unique \
+            dist/provenance.tsv

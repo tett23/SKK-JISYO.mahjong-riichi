@@ -1,0 +1,4 @@
+# 生成に使う外部データの固定版。scripts/fetch_sources.sh がこれを読む。
+# 更新したら make clean && make で再生成し、変更点を ChangeLog に書く。
+skk-dev/dict	0a164e6b990c5eb5b59eb7d8789f08865dc2f644
+google/mozc	60fe4012e5eaa26805dbbb8e5548cbe6db4aaf98

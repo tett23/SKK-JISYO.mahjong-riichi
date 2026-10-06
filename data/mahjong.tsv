@@ -1,0 +1,611 @@
+# SKK-JISYO.mahjong-riichi の手入力データ（本体）。
+#
+# 列: readings  candidate  flags  basis  refs
+#   readings  読み。空白区切りで複数可。送りありは「あがr」のように末尾に送り仮名の子音を書く。
+#   candidate 候補。注釈は書かない（ビルド時に [麻雀] を付ける）。
+#   flags     lv = 長音を機械的に展開する（docs/design.md「長音」）。中国語由来の音で読む語に付ける。
+#             yaku = 役名。SKK-JISYO.L にない組には [requested] 注釈を足す（upstream へ送る候補）。複数はカンマ区切り。
+#   basis     収録基準（docs/criteria.md）。1=基底語 2=外部用語集の見出し 3=意味が部分から予測できない
+#   refs      data/refs.tsv の id。skk-dev/dict・Wikipedia 索引・Mozc で自動照合できる語は空でよい。
+#
+# 同じ読みの中では、この表に現れた順に候補を並べる（docs/design.md「候補の並び順」）。
+# skk-dev/dict の [麻雀] 注釈付きの語はビルド時に自動で取り込むので、ここには重ねて書かなくてよい。
+
+## カタカナで書くのが普通の語（同じ読みの漢字表記より先に並べるため、ファイルの先頭に置く）
+ぽん	ポン		1	wp-glossary,mjall-0156
+ちー	チー		1	wp-glossary
+かん	カン		1	wp-glossary
+ろん	ロン		1	wp-glossary
+つも	ツモ		1	mjall-0096
+つも	自摸		1
+りーち	リーチ		1	wp-riichi
+どら	ドラ		1	wp-glossary
+てんぱい	テンパイ		1	wp-tenpai
+てんぱい	聴牌		1
+のーてん	ノーテン		1	wp-glossary
+ふりてん	フリテン		1	wp-glossary
+しゃんてん	シャンテン		1
+いーしゃんてん	イーシャンテン		1	wp-ishanten
+りゃんしゃんてん	リャンシャンテン		1	mjall-0181
+あがり	アガリ		1
+つもあがり	ツモアガリ		1
+ろんあがり	ロンアガリ		1
+おーらす	オーラス		1,2	wp-glossary
+ちょんぼ	チョンボ		1,2	wp-glossary
+らす	ラス		1
+とっぷ	トップ		1
+すじ	スジ		1	wp-suji
+うら	ウラ		1	wp-dora
+かんどら	カンドラ		1
+だまてん	ダマテン		1	wp-tenpai
+だま	ダマ		2	wp-glossary
+やみてん	ヤミテン		1	wp-tenpai,mjall-0173
+べたおり	ベタオリ		2,3	wp-glossary,mjall-0153
+おり	オリ		2	wp-glossary
+のべたん	ノベタン		1,2	wp-glossary
+しゃんぽん	シャンポン		1	wp-glossary
+しゃぼ	シャボ		2	wp-glossary
+かんちゃん	カンチャン		1	wp-glossary
+ぺんちゃん	ペンチャン		1	wp-glossary
+りゃんめん	リャンメン		1	wp-ishanten
+たんき	タンキ		1	wp-glossary
+といつ	トイツ		1
+たーつ	ターツ		1	wp-glossary
+めんつ	メンツ		1
+しゅんつ	シュンツ		1
+ふーろ	フーロ	lv	1
+だぶろん	ダブロン		1,2
+とりろん	トリロン		1
+とりぷるろん	トリプルロン		1,2
+はこ	ハコ		1	wp-hako
+はこてん	ハコテン		1	wp-hako
+とび	トビ		2	wp-glossary
+どぼん	ドボン		2	wp-glossary
+うま	ウマ		1	wp-uma
+おか	オカ		2	wp-glossary
+ぱお	パオ		1
+ぶー	ブー		1
+わんちゃんす	ワンチャンス		2	wp-glossary,mjall-0188
+のーちゃんす	ノーチャンス		2	wp-glossary
+けーてん	ケーテン		2	wp-glossary
+あくけい あっけい	悪形		2	wp-glossary
+
+## 牌
+はい ぱい	牌		1
+まんず わんず	萬子	lv	1
+ぴんず	筒子		1
+そうず	索子	lv	1
+じはい つうぱい	字牌	lv	1
+すうぱい かずはい	数牌	lv	1
+ふぉんぱい かぜはい	風牌		1
+さんげんぱい	三元牌		1
+やくはい	役牌		1
+ふぁんぱい はんぱい	翻牌		1
+ふぁんぱい はんぱい	飜牌		1
+やおちゅうはい やおちゅうぱい	么九牌	lv	1
+ろうとうはい	老頭牌	lv	1
+ちゅんちゃんぱい	中張牌		1
+はしはい	端牌		1,2
+はつ	發		1	wp-pai
+ちゅん	中		1	wp-pai
+ぱいぱん	白板		1,2
+ほんちゅん	紅中		1,2
+りゅうふぁ	緑發	lv	1,2
+いーわん	一萬		1
+りゃんわん	二萬		1
+さんわん さんまん	三萬		1
+すうわん	四萬	lv	1
+うーわん	五萬		1
+ろうわん	六萬	lv	1
+ちーわん	七萬		1
+ぱーわん	八萬		1
+ちゅうわん	九萬	lv	1
+いーぴん	一筒		1
+りゃんぴん	二筒		1
+さんぴん	三筒		1
+すうぴん	四筒	lv	1
+うーぴん	五筒		1
+ろうぴん	六筒	lv	1
+ちーぴん	七筒		1
+ぱーぴん	八筒		1
+ちゅうぴん	九筒	lv	1
+いーそう	一索	lv	1
+りゃんそう	二索	lv	1
+さんそう	三索	lv	1
+すうそう	四索	lv	1
+うーそう	五索	lv	1
+ろうそう	六索	lv	1
+ちーそう	七索	lv	1
+ぱーそう	八索	lv	1
+ちゅうそう	九索	lv	1
+
+## 数値変換（#3 は漢数字。SKK-JISYO.L の #ほんば /#3本場/ に合わせる）
+#まん #わん	#3萬		1	wp-pai
+#ぴん	#3筒		1	wp-pai
+#そう	#3索	lv	1	wp-pai
+
+## 面子・搭子・待ち
+めんつ	面子		1
+じゃんとう	雀頭		1
+しゅんつ	順子		1
+こうつ	刻子	lv	1
+かんつ	槓子		1
+といつ	対子		1
+たーつ	搭子		1
+あんこう	暗刻	lv	1
+みんこ	明刻		1
+あんかん	暗槓		1
+みんかん	明槓		1
+かかん	加槓		1
+だいみんかん	大明槓		1
+しょうみんかん	小明槓		1	wp-kan
+ぺんちゃん	辺張		1
+しゃんぽん	双碰		1,2	wp-tenpai
+しゃんてん	向聴		1
+いーしゃんてん	一向聴		1,2
+りゃんしゃんてん	二向聴		1
+のーてん	不聴		1,2
+ふりてん	振聴		1,2
+ふりてん	振り聴		1,2
+だまてん	黙聴		1,2
+やみてん	闇聴		1,2
+からてん	空聴		1,2
+
+## 行為・状態
+ふーろ	副露		1,2
+ほうら	和了	lv	1
+あがり	和了		1,2
+あがり	和了り		1
+あがr	和了		1	wp-agari
+つもほう	自摸和	lv	1,2
+つも	門前清自摸和		2
+もうぱい	摸牌	lv	1,2
+りーはい	理牌		1,2
+しーぱい	洗牌		1,2
+ちーぱい	砌牌		1,2
+くいたん	喰いタン		2,3	wp-tanyao
+くいたん	喰い断		2	wp-tanyao
+くいたん	食いタン		2	wp-tanyao
+くいたん	食い断		2	wp-tanyao
+くいさがり	喰い下がり		1,2
+ぜんつっぱ	全ツッパ		3
+ぜんつ	全ツ		2,3
+おしひき	押し引き		2,3
+
+## 牌山・河
+はいやま	牌山		1
+ぴーぱい	壁牌		1
+わんぱい	王牌		1,2
+りんしゃんぱい	嶺上牌		1,2
+うらどら	裏ドラ		1	wp-dora
+かんどら	槓ドラ		1,2
+あんぱい	安牌		1,2
+あんぱい	安全牌		1,2
+しょんぱい	生牌		1,2
+たーはい たーぱい	多牌		1,2
+しょうはい しゃおぱい	少牌		1,2
+
+## 場・席・局
+とんば	東場		1	wp-rule
+なんぷう	南風	lv	1
+とんなんせん	東南戦		1,2
+はんちゃん	半荘		1,2
+いーちゃん	一荘		1,2
+しゃーちゃ	西家		1
+ちーちゃ	起家		1,2
+ちゃんちゃ	荘家		1,2
+さんちゃ	散家		1,2
+といめん	対面		1,2
+しゃーにゅう	西入	lv	1,2
+なんにゅう	南入	lv	1,2
+りゅうきょく	流局		1,2
+らすおや	ラス親		1,2
+しゃいつ	骰子		1,2
+
+## 点数
+はん ふぁん	飜		1
+はん ふぁん	翻		1
+ふ	符		1
+かぞえやくまん	数え役満		1,2
+てんぼう	点棒		1,2
+りーちぼう	立直棒		1,2
+つみぼう	積み棒		1,2
+ばっぷ	罰符		1,2
+のーてんばっぷ	不聴罰符		1,2
+ふーてい	副底	lv	1,2
+ぱお	包		1,2
+
+## 役（標準）
+いっぱつ	一発	yaku	1	
+めんぜんちんつもほう	門前清自摸和	lv,yaku	1,2	
+たんやおちゅう	断么九	lv,yaku	1,2	
+たんやお	タンヤオ		2	wp-yakulist
+たんやお	断么九	yaku	2	
+ぴんふ	平和	yaku	1,2	
+いーぺいこう	一盃口	lv,yaku	1,2	
+いーぺー	イーペー		2	wp-yakulist
+いーぺー	一盃口	yaku	2	
+ちゃんかん	搶槓	yaku	1,2	
+ちゃんかん	槍槓	yaku	1	
+はいていもうゆえ	海底摸月	lv,yaku	1,2	
+はいていらおゆえ	海底撈月	lv,yaku	1,2	
+ほうていらおゆい	河底撈魚	lv,yaku	1,2	
+さんしょくどうじゅん	三色同順	yaku	1,2	
+いっきつうかん	一気通貫	yaku	1,2	
+いっつう	イッツー	lv	2	wp-yakulist
+いっつう	一気通貫	lv,yaku	2	
+いっつう	一通	lv,yaku	2	
+ほんちゃんたいやおちゅう	混全帯么九	lv,yaku	1,2	
+ちゃんた	チャンタ		2	wp-yakulist
+ちゃんた	混全帯么九	yaku	2	
+といといほう	対々和	lv,yaku	1,2	
+といとい	トイトイ		2	wp-yakulist
+といとい	対々和	yaku	2	
+さんあんこう	三暗刻	lv,yaku	1,2	
+ほんろうとう	混老頭	lv,yaku	1,2	
+ほんろう	ホンロー	lv	2	wp-yakulist
+ほんろう	混老頭	lv,yaku	2	
+さんしょくどうこう	三色同刻	lv,yaku	1,2	
+さんどうこう	サンドーコー	lv	2	wp-yakulist
+さんどうこう	三色同刻	lv,yaku	2	
+さんかんつ	三槓子	yaku	1,2	
+だぶるりーち	ダブル立直	yaku	1,2	
+ほんいーそう	混一色	lv,yaku	1,2	
+ほんいつ	ホンイツ		2	wp-yakulist
+ほんいつ	混一色	yaku	2	
+じゅんちゃんたいやおちゅう	純全帯么九	lv,yaku	1,2	
+じゅんちゃん	ジュンチャン		2	wp-yakulist
+じゅんちゃん	純全帯么九	yaku	2	
+りゃんぺいこう	二盃口	lv,yaku	1,2	
+りゃんぺー	リャンペー		2	wp-yakulist
+りゃんぺー	二盃口	yaku	2	
+ちんいーそう	清一色	lv,yaku	1,2	
+ちんいつ	チンイツ		2	wp-yakulist
+ちんいつ	清一色	yaku	2	
+こくしむそう	国士無双	yaku	1,2	
+しーさんやおちゅう	十三么九	lv,yaku	1,2	
+すうあんこう	四暗刻	lv,yaku	1,2	
+すうあん	スーアン	lv	2	wp-yakulist
+すうあん	四暗刻	lv,yaku	2	
+だいさんげん	大三元	yaku	1,2	
+つういーそう	字一色	lv,yaku	1,2	
+しょうすーしー	小四喜	lv,yaku	1,2	
+だいすーしー たーすーしー	大四喜	lv,yaku	1,2	
+りゅういーそう	緑一色	lv,yaku	1,2	
+ちんろうとう	清老頭	lv,yaku	1,2	
+すうかんつ	四槓子	lv,yaku	1,2	
+ちゅうれんぽうとう	九蓮宝燈	lv,yaku	1,2	
+てんほう	天和	lv,yaku	1,2	
+ちーほう	地和	lv,yaku	1,2	
+れんほう	人和	lv,yaku	1,2	
+ながしまんがん	流し満貫	yaku	1,2	
+
+## 役のカタカナ表記（正式な読みは漢字を先に置く）
+ぴんふ	ピンフ		1
+ちーといつ	チートイツ		1
+ちーとい	チートイ		2	wp-yakulist
+めんぜん	メンゼン		1
+めんたんぴん	メンタンピン		1
+たんぴん	タンピン		1
+めんほん	メンホン		1
+めんちん	メンチン		1
+くいたん	クイタン		2	wp-tanyao
+りんしゃん	リンシャン		2	wp-yakulist
+はいてい	ハイテイ	lv	2	wp-yakulist
+ほうてい	ホウテイ	lv	2	wp-yakulist
+ちゃんかん	チャンカン		1
+こくし	コクシ		2	wp-yakulist
+だぶりー	ダブリー		2	wp-riichi
+だぶるりーち	ダブルリーチ		1	mjall-0082
+いっぱつ	イッパツ		1
+
+## 役（ローカル役。Wikipedia「麻雀のローカル役」に節があるもの。途中流局の名前は yaku を付けない）
+さんれんこう	三連刻	lv,yaku	1,2	
+すうれんこう	四連刻	lv,yaku	1,2	
+だいしゃりん	大車輪	yaku	1,2	
+しょうしゃりん	小車輪	yaku	1,2	
+だいちくりん	大竹林	yaku	1,2	
+だいすうりん	大数隣	yaku	1,2	
+べにくじゃく	紅孔雀	yaku	1,2	
+こくいーそう	黒一色	lv,yaku	1,2	
+ひゃくまんごく	百万石	yaku	1,2	
+しーさんぷうた しーさんぷとう	十三不塔	lv,yaku	1,2	
+しーさんうーしー	十三無靠	yaku	1,2	
+ちーしんうーしー	七星無靠	yaku	1,2	
+いっしょくさんじゅん	一色三順	yaku	1,2	
+いっしょくよんじゅん	一色四順	yaku	1,2	
+さんぷうこう	三風刻	lv,yaku	1,2	
+すうつうこう	四字刻	lv,yaku	1,2	
+ふうかせつげつ	風花雪月	yaku	1,2	
+かんぶり かんふり	槓振り	yaku	1,2	
+とうかんほう	頭槓和	lv,yaku	1,2	
+れんかいほう	連開花	lv,yaku	1,2	
+うーぴんかいほう	五筒開花	lv,yaku	1,2	
+りゃんぞうちゃんかん	二索槍槓	lv,yaku	1,2	
+いーぴんもうゆえ	一筒摸月	lv,yaku	1,2	
+ちゅうぴんらおゆい	九筒撈魚	lv,yaku	1,2	
+だいちせい	大七星	yaku	1,2	
+さんしょくれんこう	三色連刻	lv,yaku	1,2	
+さんしょくつうかん	三色通貫	yaku	1,2	
+おたかぜさんこう	客風三刻	lv,yaku	1,2	
+たんふぉんほう	断紅和	lv,yaku	1,2	
+ぽーほいぱーれんちゃん	破回八連荘	yaku	1,2	
+うーめんちー	五門斉	yaku	1,2	
+まねまん	真似満	yaku	1,2	
+すうかいかん	四開槓	lv	1,2	
+すうふぉんれんだ	四風連打	lv	1,2	
+きゅうしゅきゅうはい	九種九牌		1,2	
+さんちゃほう	三家和	lv	1,2	
+
+## 麻雀の種類（中国麻雀のルール内の用語は別辞書。種類を指す語は本体に入れる）
+さんま	三麻		1,2	wp-sanma
+よんま	四麻		1	wp-sanma
+さんにんまーじゃん	三人麻雀		1	wp-sanma
+ちゅうごくまーじゃん	中国麻雀		1	wp-chugoku
+ちゅうごくまーじゃん	中国麻将		1	wp-chugoku
+ちゅんま	中国麻将		2	wp-chugoku
+ちゅんま	中国麻雀		2	wp-chugoku
+たいわんまーじゃん	台湾麻雀		1	wp-taiwan
+たいま	台麻		1	wp-taiwan
+りーちまーじゃん	立直麻雀		1,2
+けんこうまーじゃん	健康麻将		1,2
+あるしーあるまーじゃん	アルシーアル麻雀		1	wp-arshiar
+
+## 場所・道具・人
+じゃんそう	雀荘		1,2
+じゃんたく	雀卓		1,2
+じゃんりょく	雀力		1,2
+じゃんれき	雀歴		1,2
+ぱいふ はいふ	牌譜		1,2
+
+## 固有名詞（サービス・卓・団体・作品など）
+てんほう	天鳳	lv	2
+じゃんたま	雀魂		1	wp-janta
+えむりーぐ	Mリーグ		1	wp-mleague
+まーじゃんふぁいとくらぶ	麻雀格闘倶楽部		1	wp-mfc
+きんま	近麻		2
+
+## 牌の分類語の読みの揺れ
+ちゅうちゃんぱい	中張牌		1	jmdict-chuchan
+はしはい	端牌		2	mjall-0138
+やおちゅーぱい	幺九牌		1	wp-pai
+やおちゅうぱい	ヤオチュウ牌		2	mjall-0169
+らおとうぱい	老頭牌		1	wp-pai
+ろーとーぱい	老頭牌		1	kotobank-mahjong
+しゅうぱい しゅーぱい	数牌		1	wp-pai
+さんげんはい	三元牌		1	mjall-0044
+さんゆえんぱい	三元牌		2	wp-glossary
+こーふぉんぱい	客風牌		1	wp-pai
+きゃくふうはい	客風牌		1	wp-pai
+おたかぜはい	客風牌		2	wp-glossary
+おたかぜ	オタ風		2	mjall-0016
+じかぜ じふう	自風		1	wp-glossary
+じかぜはい	自風牌		1	wp-pai
+じふうはい	自風牌		1	mjall-0053
+めんふぉんぱい	門風牌		1	wp-pai
+ばかぜ	場風		1	mjall-0135
+ばかぜはい	場風牌		1	mjall-0135
+ちゃんふぉんぱい	荘風牌		1	majandofu-chanfon
+ちゃんふぉんぱい	圏風牌		1	wp-pai
+れんぷうはい	連風牌		2	wp-glossary
+れんぷうぱい	連風牌		1	mjall-0185
+れんふぉんぱい りぇんふぉんぱい	連風牌		1	wp-pai
+だぶとん	ダブ東		1	mjall-0081
+だぶなん	ダブ南		1	mjall-0081,majandofu-dabnan
+せんちゃんぱい	尖張牌		1,2	mjall-0071
+あかどら	赤ドラ		1,2	wp-glossary
+あかうー	赤五		2	wp-glossary
+あかうー	赤ウー		2	mjall-0001
+あかはい	赤牌		2	mjall-0001
+どらひょうじはい	ドラ表示牌		1	mjall-0112
+どらひょう	ドラ表		2	mjall-0112
+どらうけ	ドラ受け		2,3	mjall-0112
+どらそば	ドラそば		2,3	mjall-0112
+きけんはい	危険牌		1	mjall-0026
+ゆうこうはい	有効牌		2	wp-glossary
+こりつはい	孤立牌		1,2	mjall-0039
+うきはい	浮き牌		2	wp-glossary
+しょんぱい	生牌		1,2	mjall-0061
+
+## 成績・順位（天鳳・Mリーグの成績項目の一覧を外部の用語集とみなす）
+れんたい	連対		1	mleague-rentai
+れんたいりつ	連対率		2	tenhou-man,mleague-stats
+らすかいひ	ラス回避		2	mjall-0177
+らすかいひりつ	ラス回避率		2	mleague-stats
+とっぷりつ	トップ率		2	mleague-stats
+へいきんじゅんい	平均順位		2	tenhou-man
+へいきんだてん	平均打点		2	mleague-stats
+あがりりつ	和了率		2	tenhou-man
+あがりりつ	アガリ率		2	mleague-stats
+ほうじゅうりつ	放銃率		2	tenhou-man,mleague-stats
+ふーろりつ	副露率		2	tenhou-man,mleague-stats
+りーちりつ	立直率		2	tenhou-man
+りーちりつ	リーチ率		2	mleague-stats
+とびりつ	飛び率		2	tenhou-man
+あんていだんい	安定段位		2	tenhou-man
+らすめ	ラス目		2	mjall-0178
+とっぷめ	トップ目		2	mjall-0110
+とっぷしょう	トップ賞		2	mjall-0109
+だんらす	ダンラス		2	wp-glossary
+だんらす	断ラス		2	wp-glossary
+らすかく	ラス確		2	mjall-0177
+じゅんいてん	順位点		1	wp-mleague
+そてん	素点		1,2	mjall-0073
+てんぼうじょうきょう	点棒状況		2	wp-glossary
+
+## 戦術・状況
+おしひき	押し引き		2,3	wp-glossary,mjall-0016
+まわしうち	回し打ち		2	mjall-0161
+はいこうりつ	牌効率		1,2	mjall-0132
+こうけい	好形		1,2	mjall-0035
+ぐけい	愚形		1,2	mjall-0032
+りょうけい	良形		1	wp-senjutsu
+せんせいりーち	先制リーチ		2	mjall-0070
+おっかけりーち	追っかけリーチ		2	mjall-0016
+おっかけりーち	追っかけ立直		2	wp-riichi
+だまてん	ダマ聴		2	mjall-0082
+そくりー	即リー		2	wp-riichi
+りーそく	リー即		2	mjall-0179
+てやく	手役		1,2	mjall-0102
+だてん	打点		1,2	mjall-0080
+けいしきてんぱい	形式聴牌		2	wp-glossary
+けいてん	形聴		2	mjall-0033
+のーてんばっぷ	ノーテン罰符		1	wp-tenpai
+きょうつうあんぜんぱい	共通安全牌		2	mjall-0029
+むすじ	無スジ		2	wp-glossary
+うらすじ	裏スジ		2	wp-glossary
+またぎすじ	またぎスジ		2	mjall-0159
+あいだよんけん	間四間		2	wp-glossary
+せんげんはい せんげんぱい	宣言牌		2	wp-glossary,mjall-0069
+もろひ	モロヒ		2	wp-glossary
+もろひっかけ	モロ引っ掛け		2	wp-glossary
+もろひっかけ	モロひっかけ		2	mjall-0169
+じはいまち	字牌待ち		1	wp-ishanten
+じごくまち	地獄待ち		2,3	mjall-0051
+かたあがり	片アガリ		2	wp-tenpai
+かたあがり	片和了り		2	mjall-0020
+なかぶくれ	中ぶくれ		2	wp-glossary
+なかぶくれ	中ブクレ		2	wp-glossary
+なかぶくれ	中膨れ		2	mjall-0117
+ありゃんめん	亜両面		1	wp-tenpai
+ありゃんめん	亜両門		2	wp-glossary
+りゃんめんまち	両面待ち		2	mjall-0182
+ためんちゃん	多面張		1,2	mjall-0083
+ためんまち	多面待ち		2	mjall-0083
+へんそくまち	変則待ち		2	mjall-0154
+にどうけ	2度受け		2,3	mjall-0124
+かんぜんいーしゃんてん	完全一向聴		2	mjall-0024
+てがわり	手変わり		2	wp-glossary
+くっつき	くっつき		2,3	wp-glossary
+くっつきてんぱい	くっつき聴牌		2	mjall-0033
+くっつきてんぱい	くっつきテンパイ		2	wp-ishanten
+へっどれす	ヘッドレス		2	mjall-0153
+ろくぶろっく	六ブロック		2	mjall-0186
+たーつ	塔子		2	mjall-0074
+といつおとし	対子落とし		2	mjall-0105
+なにきる	何切る		2,3	mjall-0120
+てなり	手なり		2	mjall-0101
+てなり	手成り		2	wp-glossary
+てんぱいとらず	聴牌取らず		2	wp-ishanten
+てんぱいとらず	テンパイ取らず		2	wp-ishanten
+てんぱいやめ	聴牌やめ		2	mjall-0103
+ごみて	ゴミ手		2	wp-glossary
+くずて	クズ手		2	mjall-0032
+のみて	ノミ手		2	wp-glossary
+のみて	のみ手		2	mjall-0129
+やすあがり	安アガリ		2	wp-glossary
+はねちょく	ハネ直		2	wp-glossary
+まんちょく	満直		2	mjall-0162
+まんつも	満ツモ		2	mjall-0162
+おやっかぶり	親っかぶり		2	wp-glossary
+おやかぶり	親かぶり		2	wp-glossary
+ごろん	誤ロン		2	mjall-0039
+やきとり	焼き鳥		2,3	mjall-0170
+はこした	ハコ下		1	wp-hako
+はこしたせいさん	箱下清算		2	mjall-0137
+とびしょう	飛び賞		1	wp-hako
+どぼんしょう	ドボン賞		1	wp-hako
+とびばっぷ	飛び罰符		2	mjall-0111
+いっぱつけし	一発消し		2	wp-glossary
+どらぽん	ドラポン		1	abema-doraon
+なきたん	鳴きタン		2	mjall-0119
+ばらきり	バラ切り		2	mjall-0141
+とんぱつ	東発		2	mjall-0116
+とんぱつ	東パツ		2	wp-glossary
+とんらす	東ラス		2	mjall-0116
+ぜんつ	ゼンツ		2	wp-glossary
+つもぎり	ツモ切り		2	wp-glossary
+つもぎり	自摸切り		2	mjall-0096
+てだし	手出し		2	mjall-0100
+からぎり	空切り		2	mjall-0022
+おりうち	オリ打ち		2	wp-glossary
+おりうち	降り打ち		2	mjall-0018
+
+## 動詞（送りあり）
+つもr	ツモ		1	wp-glossary
+つもr	自摸		1
+あがr	アガ		1	wp-glossary
+てんぱr	テンパ		1	wp-tenpai
+おりr	オリ		1	wp-tenpai
+
+## 固有名詞の追加（サービス・卓・段位）
+てんほう	天鳳		1	wp-tenhou
+てんほうい	天鳳位		1	tenhou-ranking
+てんほうめいじんせん	天鳳名人戦		1	wp-meijinsen
+いっぱんたく	一般卓		1	wp-tenhou
+じょうきゅうたく	上級卓		1	wp-tenhou
+とくじょうたく	特上卓		1	bi-tenhou,kotobank-tokujou
+ほうおうたく	鳳凰卓		1	gendai-tenhou
+とくじょう	特上		2	tenhou-man
+ほうおう	鳳凰		2	tenhou-man
+てんほういっぱんたく	天鳳一般卓		1	wp-tenhou
+てんほうじょうきゅうたく	天鳳上級卓		1	wp-tenhou
+てんほうとくじょうたく	天鳳特上卓		1	bi-tenhou
+てんほうほうおうたく	天鳳鳳凰卓		1	gendai-tenhou
+どうのま	銅の間		1	wp-janta
+ぎんのま	銀の間		1	wp-janta
+きんのま	金の間		1	wp-janta
+おうざのま	王座の間		1	wp-janta
+じゃんし	雀士		1	kotobank-janshi
+じゃんせい	雀聖		1	wp-tetsuya
+じゃんごう	雀豪		2
+えむじぇい	MJ		1	wp-mj
+せがねっとまーじゃんえむじぇい	セガNET麻雀 MJ		1	wp-mj
+まーじゃんふぁいとがーる	麻雀ファイトガール		1	wp-fightgirl
+まるじゃん	Maru-Jan		1	wp-marujan
+じゃんりゅうもん	雀龍門		1	nico-janryumon
+まーじゃんいちばんがい	麻雀一番街		1	nico-ichibangai
+ねっとまーじゃん	ネット麻雀		1
+
+## 固有名詞の追加（団体・リーグ・タイトル戦）
+えむりーがー	Mリーガー		1	wp-mleague
+えむりーぐきこう	Mリーグ機構		1	wp-mleague
+にほんぷろまーじゃんれんめい	日本プロ麻雀連盟		1	wp-renmei
+さいこういせんにほんぷろまーじゃんきょうかい	最高位戦日本プロ麻雀協会		1	wp-saikouisen-kyokai
+さいこういせん	最高位戦		1	wp-saikouisen
+にほんぷろまーじゃんきょうかい	日本プロ麻雀協会		1	wp-kyokai
+まーじゃんれんごう	麻将連合		1	wp-mu
+あーるえむゆー	RMU		1	wp-rmu
+にほんぷろまーじゃんきしかい	日本プロ麻雀棋士会		1	wp-kishikai
+ほうおうせん	鳳凰戦		1	wp-houousen
+ほうおうい	鳳凰位		1	wp-houousen
+さいこうい	最高位		1	kotobank-saikoui
+じゅうだんせん	十段戦		1	wp-judansen
+じゅうだんい	十段位		1	wp-judansen
+おういせん	王位戦		1	wp-ouisen
+しょうおう	将王		1	wp-mu
+まーじゃんさいきょうせん	麻雀最強戦		1	wp-saikyousen
+さいきょうい	最強位		1	wp-saikyousen
+さいこういせんくらしっく	最高位戦Classic		1	wp-classic
+もんどまーじゃんぷろりーぐ	モンド麻雀プロリーグ		1	wp-mondo
+
+## 固有名詞の追加（Mリーグのチーム。2026-27 シーズン）
+あかさかどりぶんず	赤坂ドリブンズ		1	wp-mleague
+いーえっくすふうりんかざん	EX風林火山		1	wp-mleague
+こなみまーじゃんふぁいとくらぶ	KONAMI麻雀格闘倶楽部		1	wp-mleague
+しぶやあべまず	渋谷ABEMAS		1	wp-mleague
+あべまず	ABEMAS		1	wp-mleague
+せがさみーふぇにっくす	セガサミーフェニックス		1	wp-mleague
+ちーむらいでん	TEAM RAIDEN/雷電		1	wp-mleague
+ゆーねくすとぱいれーつ	U-NEXT Pirates		1	wp-mleague
+かどかわさくらないつ	KADOKAWAサクラナイツ		1	wp-mleague
+びーすとてん	BEAST X		1	wp-mleague
+あーすじぇっつ	EARTH JETS		1	wp-mleague
+
+## 固有名詞の追加（雑誌・作品）
+きんだいまーじゃん	近代麻雀		1	wp-kinma
+きんだいまーじゃんおりじなる	近代麻雀オリジナル		1	wp-kinma
+きんだいまーじゃんごーるど	近代麻雀ゴールド		1	wp-kinma
+まーじゃんほうろうき	麻雀放浪記		1	wp-hourouki
+てつやじゃんせいとよばれたおとこ	哲也-雀聖と呼ばれた男		1	wp-tetsuya
+さき	咲-Saki-		1	wp-saki
+さきあちがへん	咲-Saki-阿知賀編		1	wp-saki
+あかぎ	アカギ		1	wp-akagi
+あかぎやみにおりたったてんさい	アカギ 〜闇に降り立った天才〜		1	wp-akagi
+むこうぶちこうれーとうらまーじゃんれつでん	むこうぶち 高レート裏麻雀列伝		1	wp-mukoubuchi
+てんてんほーどおりのかいだんじ	天 天和通りの快男児		1	wp-ten
+うさぎやせいのとうはい	兎-野性の闘牌-		1	wp-usagi
+とうはい	凍牌		1	wp-touhai
+むだづもなきかいかく	ムダヅモ無き改革		1	wp-mudazumo
+のーまーくばくはいとう	ノーマーク爆牌党		1	wp-bakuhaitou
+てつなきのきりんじ	鉄鳴きの麒麟児		1	wp-kirinji

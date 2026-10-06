@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: sources-${{ hashFiles('sources.lock') }}
+      - run: deno fmt --check
+      - run: deno lint
+      - run: deno task test
+      - run: deno task build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dictionary
+          path: |
+            dist/SKK-JISYO.mahjong-riichi
+            dist/SKK-JISYO.mahjong-riichi.L-unique
+            dist/provenance.tsv
