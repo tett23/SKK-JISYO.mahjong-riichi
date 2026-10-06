@@ -1,0 +1,73 @@
+target	action	reading	candidate	in_SKK-JISYO.requested	current_entry	sources
+SKK-JISYO.L	add-candidate	いっつう	一気通貫	0	いっつう /一通/1通/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	いっつー	一気通貫	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	いーぺいこう	一盃口	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	いーぺー	一盃口	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	いーぺーこー	一盃口	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	さんあんこ	三暗刻	1		skk-dev/dict:SKK-JISYO.requested
+SKK-JISYO.L	new-entry	さんあんこう	三暗刻	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	さんかんつ	三槓子	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	さんしょくどうこう	三色同刻	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	さんしょくどーこー	三色同刻	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	さんどうこう	三色同刻	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	さんどーこー	三色同刻	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	しょうすうしー	小四喜	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	しょうすーしー	小四喜	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	しょーすーしー	小四喜	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	しーさんやおちゅう	十三么九	0		wikipedia:麻雀用語一覧@108958820
+SKK-JISYO.JIS3_4	needs-JIS3_4	しーさんやおちゅー	十三么九	0		wikipedia:麻雀用語一覧@108958820
+SKK-JISYO.JIS3_4	needs-JIS3_4	じゅんちゃん	純全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	じゅんちゃんたいやおちゅう	純全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	じゅんちゃんたいやおちゅー	純全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	すうあん	四暗刻	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	すうかんつ	四槓子	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	すうしーほう	四喜和	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	すーあん	四暗刻	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	すーかんつ	四槓子	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	すーしーほう	四喜和	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	すーしーほー	四喜和	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.JIS3_4	needs-JIS3_4	たんやお	断么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	already-in-JIS3_4	たんやおちゅう	断么九	0		skk-dev/dict:SKK-JISYO.JIS3_4 wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	already-in-JIS3_4	たんやおちゅー	断么九	0		skk-dev/dict:SKK-JISYO.JIS3_4 wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	たーすうしー	大四喜	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	だいすうしー	大四喜	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	だぶるりーち	ダブル立直	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちゃんかん	搶槓	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	ちゃんかん	槍槓	0		mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	ちゃんた	混全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちゅうれんぽうとう	九蓮宝燈	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちゅーれんぽーとー	九蓮宝燈	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちんいつ	清一色	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちんいーそう	清一色	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちんろうとう	清老頭	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちんろーとー	清老頭	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちーといつ	七対子	1		skk-dev/dict:SKK-JISYO.requested wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ちーほう	地和	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	つういーそう	字一色	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	つも	門前清自摸和	0	つも /自摸;[麻雀]/模;?/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	といとい	対々和	0	といとい /対々/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	といといほう	対々和	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	といといほー	対々和	0	といといほー /対対和/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ながしまんがん	流し満貫	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	はいていもうゆえ	海底摸月	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	はいてーもーゆえ	海底摸月	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	はいてーらおゆえ	海底撈月	0		wikipedia:麻雀の役一覧@109102932
+SKK-JISYO.L	new-entry	ほうていらおゆい	河底撈魚	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	ほんいつ	混一色	0	ほんいつ /奔逸/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ほんいーそう	混一色	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	ほんちゃんたいやおちゅう	混全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.JIS3_4	needs-JIS3_4	ほんちゃんたいやおちゅー	混全帯么九	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	ほんろう	混老頭	0	ほんろう /翻弄/	wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ほんろうとう	混老頭	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ほんろー	混老頭	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ほんろーとー	混老頭	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	ほーてーらおゆい	河底撈魚	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	めんぜんちんつもほう	門前清自摸和	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	めんぜんちんつもほー	門前清自摸和	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	やくはい	役牌	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	りゃんぺいこう	二盃口	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	りゃんぺー	二盃口	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	りゃんぺーこー	二盃口	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	りゅういーそう	緑一色	0		wikipedia:麻雀の役一覧@109102932 mozc:dictionary_oss
+SKK-JISYO.L	add-candidate	れんほう	人和	0	れんほう /蓮舫/連舫/	wikipedia:麻雀用語一覧@108958820 mozc:dictionary_oss
+SKK-JISYO.L	new-entry	れんほー	人和	1		skk-dev/dict:SKK-JISYO.requested wikipedia:麻雀用語一覧@108958820 mozc:dictionary_oss

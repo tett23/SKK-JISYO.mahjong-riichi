@@ -46,6 +46,21 @@ deno task build
 （`data/index/`）はリポジトリに入れてあり、作り直すときだけ `deno task index` / `deno task corpus` を使う
 （`--latest` を付けると最新版に更新する）。
 
+## upstream への還元
+
+`[requested]` の付いた役名を skk-dev/dict へ送るための材料を `upstream/` に置いている。
+
+```bash
+CHANGELOG_AUTHOR="名前  <メール>" deno task upstream
+```
+
+- `upstream/requested-yaku.tsv` — 送る組の一覧（送り先、新しい行か既存の行への追加か、出典）
+- `upstream/ChangeLog.txt` — skk-dev/dict の ChangeLog に足す文面（真鵺道）
+- `upstream/PR.md` — プルリクエストの本文の草案
+- `upstream/skk-dev-dict.patch` — skk-dev/dict の master に当てるパッチ（`--apply <作業ツリー>` で作業ツリーを直接書き換えたものの差分）
+
+么 を含む役名は SKK-JISYO.L（EUC-JP）に入らないので、パッチには含めず PR.md に別途相談として載せる。
+
 ## 収録基準と設計
 
 - [docs/criteria.md](docs/criteria.md) — 何を収録し、何を収録しないか。出典の扱い

@@ -16,7 +16,13 @@
     },
     "index": "deno run --allow-read --allow-write --allow-net=ja.wikipedia.org scripts/wp_index.ts",
     "corpus": "deno run --allow-read --allow-write --allow-net=ja.wikipedia.org scripts/corpus.ts",
-    "notes": "deno run --allow-read scripts/release_notes.ts"
+    "notes": "deno run --allow-read scripts/release_notes.ts",
+    "upstream": {
+      "command": "deno run --allow-read --allow-write --allow-env=CHANGELOG_AUTHOR scripts/upstream.ts",
+      "dependencies": [
+        "build"
+      ]
+    }
   },
   "fmt": {
     "lineWidth": 120,
