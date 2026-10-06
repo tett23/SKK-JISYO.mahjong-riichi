@@ -47,6 +47,8 @@
 のべたん	ノベタン		1,2	wp-glossary
 しゃんぽん	シャンポン		1	wp-glossary
 しゃぼ	シャボ		2	wp-glossary
+しゃぼ	双碰		2	wp-glossary,jmdict-shanpon
+しゃぼ	双ポン		2	wp-glossary,jmdict-shanpon
 かんちゃん	カンチャン		1	wp-glossary
 ぺんちゃん	ペンチャン		1	wp-glossary
 りゃんめん	リャンメン		1	wp-ishanten
@@ -143,6 +145,7 @@
 しょうみんかん	小明槓		1	wp-kan
 ぺんちゃん	辺張		1
 しゃんぽん	双碰		1,2	wp-tenpai
+しゃんぽん	双ポン		1	jmdict-shanpon
 しゃんてん	向聴		1
 いーしゃんてん	一向聴		1,2
 りゃんしゃんてん	二向聴		1
