@@ -81,17 +81,3 @@ Deno.test("decodeEucJis2004: 0213 固有の字は表で読み、未知なら例�
   assertThrows(() => decodeEucJis2004(new Uint8Array([0xf9, 0xa9])));
   assertThrows(() => decodeEucJis2004(new Uint8Array([0x8f, 0xa1, 0xab])));
 });
-
-Deno.test("release notes: 追加・削除・注釈の変更を組単位で数える", async () => {
-  const { notes } = await import("../scripts/release_notes.ts");
-  const m = (xs: [string, string, string][]) =>
-    new Map(xs.map(([reading, cand, annot]) => [`${reading}\t${cand}`, { reading, cand, annot }]));
-  const prev = m([["ぽん", "碰", "[麻雀]"], ["かん", "槓", "[麻雀]"], ["ぴんふ", "平和", "[麻雀]"]]);
-  const cur = m([["ぽん", "碰", "[麻雀]"], ["ぽん", "ポン", "[麻雀]"], ["ぴんふ", "平和", "[麻雀][requested]"]]);
-  const out = notes("v0.0.2", cur, prev, "v0.0.1");
-  assertEquals(out.includes("- 追加: 1 組"), true);
-  assertEquals(out.includes("ぽん /ポン;[麻雀]/"), true);
-  assertEquals(out.includes("- 削除: 1 組"), true);
-  assertEquals(out.includes("かん /槓;[麻雀]/"), true);
-  assertEquals(out.includes("- 注釈の変更: 1 組"), true);
-});

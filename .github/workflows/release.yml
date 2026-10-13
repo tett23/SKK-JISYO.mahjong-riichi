@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
@@ -44,12 +46,18 @@ jobs:
           fi
 
       - name: リリースノートを作る
+        env:
+          PREV: ${{ steps.prev.outputs.tag }}
         run: |
-          if [ -n "${{ steps.prev.outputs.tag }}" ]; then
-            deno run --allow-read scripts/release_notes.ts "$GITHUB_REF_NAME" dist/SKK-JISYO.mahjong-riichi \
-              prev/SKK-JISYO.mahjong-riichi "${{ steps.prev.outputs.tag }}" > notes.md
+          if [ -n "$PREV" ]; then
+            git log --no-merges --format='%H%x09%s' "$PREV..$GITHUB_REF_NAME" > commits.tsv
+            deno run --allow-read scripts/release_notes.ts --tag "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" \
+              --dict dist/SKK-JISYO.mahjong-riichi --commits commits.tsv \
+              --prev-tag "$PREV" --prev-dict prev/SKK-JISYO.mahjong-riichi > notes.md
           else
-            deno run --allow-read scripts/release_notes.ts "$GITHUB_REF_NAME" dist/SKK-JISYO.mahjong-riichi > notes.md
+            git log --no-merges --format='%H%x09%s' "$GITHUB_REF_NAME" > commits.tsv
+            deno run --allow-read scripts/release_notes.ts --tag "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" \
+              --dict dist/SKK-JISYO.mahjong-riichi --commits commits.tsv > notes.md
           fi
 
       - name: リリースを作る

@@ -39,8 +39,12 @@ deno task build
 ## リリース
 
 `VERSION` を更新してコミットし、`v` で始まるタグ（`v0.0.1-rc1` など）を push すると、GitHub Actions が
-辞書を生成して GitHub Releases に公開する。リリースノートには、直前のリリースの辞書と比べて追加・削除した
-(読み, 候補) の組が載る（`scripts/release_notes.ts`）。`-` を含むタグはプレリリースになる。
+辞書を生成して GitHub Releases に公開する。`-` を含むタグはプレリリースになる。
+
+リリースノートは日本語で、直前のリリースからのコミットを「追加」「変更」「削除」「修正」に分けて、
+コミット・PR・ADR への絶対リンクを付けて載せる。あわせて、直前のリリースの辞書と比べて追加・削除した
+(読み, 候補) の組を「語彙」に載せる（`scripts/release_notes.ts`。詳細は
+[docs/specifications.md](docs/specifications.md) の「リリースノート」、[ADR 0002](docs/adr/0002-categorized-release-notes.md)）。
 
 外部データは `sources.lock` に固定した版を `.cache/` に取得して使う。Wikipedia の索引とコーパスの集計
 （`data/index/`）はリポジトリに入れてあり、作り直すときだけ `deno task index` / `deno task corpus` を使う
