@@ -3,14 +3,14 @@
 # 列: readings  candidate  flags  basis  refs
 #   readings  読み。空白区切りで複数可。送りありは「あがr」のように末尾に送り仮名の子音を書く。
 #   candidate 候補。注釈は書かない（ビルド時に [麻雀] を付ける）。
-#   flags     lv = 長音を機械的に展開する（docs/design.md「長音」）。中国語由来の音で読む語に付ける。
+#   flags     lv = 長音を機械的に展開する（docs/specifications.md「長音」）。中国語由来の音で読む語に付ける。
 #             yaku = 標準の役名（Wikipedia「麻雀の役一覧」の「主な役」の表記と、その異体表記）。
 #                    SKK-JISYO.L にない組には [requested] 注釈を足す（upstream へ送る候補）。ローカル役と略称には付けない。
 #             複数はカンマ区切り。
-#   basis     収録基準（docs/criteria.md）。1=基底語 2=外部用語集の見出し 3=意味が部分から予測できない
+#   basis     収録基準（docs/specifications.md）。1=基底語 2=外部用語集の見出し 3=意味が部分から予測できない
 #   refs      data/refs.tsv の id。skk-dev/dict・Wikipedia 索引・Mozc で自動照合できる語は空でよい。
 #
-# 同じ読みの中では、この表に現れた順に候補を並べる（docs/design.md「候補の並び順」）。
+# 同じ読みの中では、この表に現れた順に候補を並べる（docs/specifications.md「候補の並び順」）。
 # skk-dev/dict の [麻雀] 注釈付きの語はビルド時に自動で取り込むので、ここには重ねて書かなくてよい。
 
 ## カタカナで書くのが普通の語（同じ読みの漢字表記より先に並べるため、ファイルの先頭に置く）

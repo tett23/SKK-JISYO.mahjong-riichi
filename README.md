@@ -61,10 +61,26 @@ CHANGELOG_AUTHOR="名前  <メール>" deno task upstream
 
 么 を含む役名は SKK-JISYO.L（EUC-JP）に入らないので、パッチには含めず PR.md に別途相談として載せる。
 
-## 収録基準と設計
+## 仕様と ADR
 
-- [docs/criteria.md](docs/criteria.md) — 何を収録し、何を収録しないか。出典の扱い
-- [docs/design.md](docs/design.md) — 長音、重複除去、文字コード、カタカナ語、固有名詞、送りあり、数値変換などの決定事項
+- [docs/specifications.md](docs/specifications.md) — 仕様の全体。収録基準（何を収録し、何を収録しないか、出典の扱い）と、
+  設計（長音、重複除去、文字コード、カタカナ語、固有名詞、送りあり、数値変換など）
+- [docs/adr/](docs/adr/) — 設計判断の記録（ADR）。運用は [ADR 0001](docs/adr/0001-adopt-adr-and-adr-guard.md) による
+
+仕様を変えるときは、先に ADR を書いてレビューを受ける。一度コミットした ADR はステータスの行を除いて変更できず、
+仕様を変える場合は新しい ADR を作る。ADR で仕様が変わったら、同じ変更で `docs/specifications.md` とこの README も直す。
+語の追加・削除は収録基準に従う限り ADR は要らない。
+
+### 開発の準備
+
+コミット済みの ADR を守るため、[adr-guard](https://github.com/tett23/adr-guard)（v0.8.1）をインストールし
+（[インストール方法](https://github.com/tett23/adr-guard#インストール)）、clone ごとに git の hook を有効にする。
+
+```bash
+git config core.hooksPath .githooks
+```
+
+CI でも同じ検査をする（`.github/workflows/ci.yml` の `adr` ジョブ）。
 
 語を追加するときは `data/mahjong.tsv` に 1 行足す。出典を自動照合できない語は `data/refs.tsv` に出典を足す。
 `deno task build` は出典のない組があると失敗する。
