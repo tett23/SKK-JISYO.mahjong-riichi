@@ -12,8 +12,9 @@ ADR の運用は [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) による。
 
 | ADR | ステータス | 内容 |
 |---|---|---|
-| [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) | 採択 | ADR の運用と adr-guard を導入する |
+| [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) | 採択→adr-guard の版と `--allow-links` で許可する変更は [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md) | ADR の運用と adr-guard を導入する |
 | [ADR 0002](adr/0002-categorized-release-notes.md) | 採択 | リリースノートの変更点を分類し、コミットへのリンクを付ける |
+| [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md) | 採択 | adr-guard を v0.8.2 に上げ、コミット済みの ADR のリンクだけの変更を許可する |
 
 ## 収録基準
 
