@@ -1,6 +1,6 @@
 # ADR 0001: ADR の運用と adr-guard を導入する
 
-ステータス: 採択
+ステータス: 採択→adr-guard の版と --allow-links で許可する変更は[ADR 0003](0003-update-adr-guard-to-v0-8-2.md)
 
 ## 文脈
 
