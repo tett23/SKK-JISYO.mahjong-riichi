@@ -1,6 +1,6 @@
 # ADR 0003: adr-guard を v0.8.2 に上げ、コミット済みの ADR のリンクだけの変更を許可する
 
-ステータス: 採択
+ステータス: 採択→adr-guard の版は[ADR 0004](0004-update-adr-guard-to-v0-8-3.md)
 
 ## 文脈
 
