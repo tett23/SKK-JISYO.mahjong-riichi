@@ -77,7 +77,7 @@ CHANGELOG_AUTHOR="名前  <メール>" deno task upstream
 
 ### 開発の準備
 
-コミット済みの ADR を守るため、[adr-guard](https://github.com/tett23/adr-guard)（v0.8.2）をインストールし
+コミット済みの ADR を守るため、[adr-guard](https://github.com/tett23/adr-guard)（v0.8.3）をインストールし
 （[インストール方法](https://github.com/tett23/adr-guard#インストール)）、clone ごとに git の hook を有効にする。
 
 ```bash
