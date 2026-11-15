@@ -5,6 +5,13 @@
 v0.0.2 までの決定は ADR を経ずに直接この文書（当時は `docs/design.md` と `docs/criteria.md`）に書いていた。
 それ以後の仕様の変更は ADR（`docs/adr/`）で決め、同じ変更でこの文書と `README.md` も直す。
 ADR の運用は [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) による。
+ステータスの行の書き方は [ADR 0006](adr/0006-update-adr-guard-to-v0-13-1.md) による。
+
+- ADR のステータスの行は、`Status: <トークン>` の形で書く。トークンは `proposed`、`accepted`、`accepted-pending`、`rejected`、`discarded`、`deprecated`、または `superseded [<変更の JSON 配列>]` である
+- ADR は作成時点ではコミットせず、人間のレビューを受けてから、`Status: proposed` でコミットする。次のコミットで、ステータスを `accepted` か `accepted-pending`（採択したが、まだ実装していない）にする
+- 後の ADR が一部を変えた ADR は、ステータスを `superseded [{"part":"<部分名>","by":["docs/adr/<後の ADR>.md"]}]` にする。部分名は、変えられた部分の名前である。修正の関係は `adr-guard trace` でたどれる
+- ADR を破棄する場合は、ステータスを `discarded` にし、理由をこの文書に書く
+- pre-commit hook と CI（`adr` ジョブ、`tett23/adr-guard@v0.13.1`）は、ステータスの行の状態遷移を検査する。許されない遷移（新しい ADR を `accepted` で足すなど）は、`--allow-status` を付けても通らない
 
 語の追加・削除は、この文書の収録基準に従う限り仕様の変更ではないので、ADR は要らない。収録基準そのものを変える場合は ADR を書く。
 
@@ -12,11 +19,12 @@ ADR の運用は [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) による。
 
 | ADR | ステータス | 内容 |
 |---|---|---|
-| [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) | 採択→adr-guard の版と `--allow-links` で許可する変更は [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md) | ADR の運用と adr-guard を導入する |
-| [ADR 0002](adr/0002-categorized-release-notes.md) | 採択 | リリースノートの変更点を分類し、コミットへのリンクを付ける |
-| [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md) | 採択→adr-guard の版は [ADR 0004](adr/0004-update-adr-guard-to-v0-8-3.md) | adr-guard を v0.8.2 に上げ、コミット済みの ADR のリンクだけの変更を許可する |
-| [ADR 0004](adr/0004-update-adr-guard-to-v0-8-3.md) | 採択→adr-guard の版は [ADR 0005](adr/0005-update-adr-guard-to-v0-10-0.md) | adr-guard を v0.8.3 に上げ、採択（未実装）のステータスを使えるようにする |
-| [ADR 0005](adr/0005-update-adr-guard-to-v0-10-0.md) | 採択 | adr-guard を v0.10.0 に上げ、ADR の番号の重複と修飾子付きの参照を検査する |
+| [ADR 0001](adr/0001-adopt-adr-and-adr-guard.md) | `superseded`（adr-guard の版と `--allow-links` で許可する変更は [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md)、ステータスの行の値と、最初にコミットするときのステータスは [ADR 0006](adr/0006-update-adr-guard-to-v0-13-1.md)） | ADR の運用と adr-guard を導入する |
+| [ADR 0002](adr/0002-categorized-release-notes.md) | `accepted` | リリースノートの変更点を分類し、コミットへのリンクを付ける |
+| [ADR 0003](adr/0003-update-adr-guard-to-v0-8-2.md) | `superseded`（adr-guard の版は [ADR 0004](adr/0004-update-adr-guard-to-v0-8-3.md)） | adr-guard を v0.8.2 に上げ、コミット済みの ADR のリンクだけの変更を許可する |
+| [ADR 0004](adr/0004-update-adr-guard-to-v0-8-3.md) | `superseded`（adr-guard の版は [ADR 0005](adr/0005-update-adr-guard-to-v0-10-0.md)、未実装の ADR のステータスの書き方は [ADR 0006](adr/0006-update-adr-guard-to-v0-13-1.md)） | adr-guard を v0.8.3 に上げ、採択（未実装）のステータスを使えるようにする |
+| [ADR 0005](adr/0005-update-adr-guard-to-v0-10-0.md) | `superseded`（adr-guard の版は [ADR 0006](adr/0006-update-adr-guard-to-v0-13-1.md)） | adr-guard を v0.10.0 に上げ、ADR の番号の重複と修飾子付きの参照を検査する |
+| [ADR 0006](adr/0006-update-adr-guard-to-v0-13-1.md) | `accepted` | adr-guard を v0.13.1 に上げ、ADR のステータスの行を新形式に移す |
 
 ## 収録基準
 

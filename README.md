@@ -77,7 +77,7 @@ CHANGELOG_AUTHOR="名前  <メール>" deno task upstream
 
 ### 開発の準備
 
-コミット済みの ADR を守るため、[adr-guard](https://github.com/tett23/adr-guard)（v0.10.0）をインストールし
+コミット済みの ADR を守るため、[adr-guard](https://github.com/tett23/adr-guard)（v0.13.1）をインストールし
 （[インストール方法](https://github.com/tett23/adr-guard#インストール)）、clone ごとに git の hook を有効にする。
 
 ```bash
@@ -85,6 +85,8 @@ git config core.hooksPath .githooks
 ```
 
 CI でも同じ検査をし、ADR の番号の重複も検査する（`.github/workflows/ci.yml` の `adr` ジョブ）。
+どちらも、ADR のステータスの行の状態遷移を検査する。
+新しい ADR は、レビューを受けた後に `Status: proposed` でコミットし、次のコミットで `Status: accepted` か `Status: accepted-pending` にする。
 
 語を追加するときは `data/mahjong.tsv` に 1 行足す。出典を自動照合できない語は `data/refs.tsv` に出典を足す。
 `deno task build` は出典のない組があると失敗する。
